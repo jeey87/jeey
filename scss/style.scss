@@ -1,5 +1,25 @@
-@charset 'utf-8'; 
-@import 'reset.scss';
+@charset "utf-8"; 
+@import "reset.scss";
 
+#header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
 
+    .inner {
+        width: 1180px;
+        height: 120px;
+        margin: 0px auto;
+        position: relative;
 
+        >h1 {
+            position: absolute;
+            left: 0px;
+            bottom: 15px;
+
+            a {
+                font: bold 24px/1 "arial";
+                color: #444;
+            }
+        }
+    }
+}
