@@ -42,5 +42,23 @@ a {
         #header .inner .menuWeb #gnb li:hover a {
           background: #555;
           color: #fff; }
+    #header .inner .menuWeb .util {
+      position: absolute;
+      top: 20px;
+      right: 0px; }
+      #header .inner .menuWeb .util::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb .util li {
+        float: left; }
+        #header .inner .menuWeb .util li a {
+          display: block;
+          font: 12px/1 "arial";
+          color: #999;
+          padding: 0px 10px;
+          border-right: 1px solid #aaa; }
+        #header .inner .menuWeb .util li:last-child a {
+          border-right: none; }
 
 /*# sourceMappingURL=style.css.map */

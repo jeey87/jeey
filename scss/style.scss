@@ -51,6 +51,36 @@
                     }
                 }
             }
+
+            .util {
+                position: absolute;
+                top: 20px;
+                right: 0px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        font: 12px/1 "arial";
+                        color: #999;
+                        padding: 0px 10px;
+                        border-right: 1px solid #aaa;
+                    }
+
+                    &:last-child a {
+                        border-right: none;
+                    }
+                }
+            }
+
+            
         }
     }
 }
