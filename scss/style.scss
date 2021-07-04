@@ -1,6 +1,15 @@
 @charset "utf-8"; 
 @import "reset.scss";
 
+/*
+@mixin title() {
+    font: bold 24px/1 "arial";
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+*/
+
 #header {
     width: 100%;
     border-bottom: 1px solid #ddd;
@@ -267,5 +276,18 @@
                 margin-top: 20px;
             }
         }
+    }
+}
+
+//---------------banner-----------------------
+
+#banner {
+    width: 100%;
+    padding: 150px 0px;
+    background: #aaa;
+
+    .inner {
+        width: 1180px;
+        margin: 0px auto;
     }
 }

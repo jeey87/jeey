@@ -8,6 +8,14 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+/*
+@mixin title() {
+    font: bold 24px/1 "arial";
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+*/
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd; }
@@ -187,5 +195,13 @@ a {
         background: #444;
         float: left;
         margin-top: 20px; }
+
+#banner {
+  width: 100%;
+  padding: 150px 0px;
+  background: #aaa; }
+  #banner .inner {
+    width: 1180px;
+    margin: 0px auto; }
 
 /*# sourceMappingURL=style.css.map */
