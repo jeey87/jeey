@@ -60,5 +60,13 @@ a {
           border-right: 1px solid #aaa; }
         #header .inner .menuWeb .util li:last-child a {
           border-right: none; }
+    #header .inner .btnCall {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #555;
+      font-size: 30px;
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */
