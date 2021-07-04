@@ -100,4 +100,11 @@ a {
       #header .inner .menuMo.on {
         left: 0px; }
 
+#visual {
+  width: 100%;
+  height: calc(100vh - 121px);
+  background: #aaa;
+  position: relative;
+  overflow: hidden; }
+
 /*# sourceMappingURL=style.css.map */

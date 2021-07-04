@@ -138,3 +138,13 @@
         }
     }
 }
+
+//--------------VISUAL------------------------
+
+#visual {
+    width: 100%;
+    height: calc(100vh - 121px);
+    background: #aaa;
+    position: relative;
+    overflow: hidden;
+}
