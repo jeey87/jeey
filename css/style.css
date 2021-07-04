@@ -23,5 +23,24 @@ a {
       #header .inner > h1 a {
         font: bold 24px/1 "arial";
         color: #444; }
+    #header .inner .menuWeb #gnb {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+      #header .inner .menuWeb #gnb::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb #gnb li {
+        float: left; }
+        #header .inner .menuWeb #gnb li a {
+          display: block;
+          padding: 20px 40px;
+          font: bold 15px/1 "arial";
+          color: #555;
+          transition: all 0.5s; }
+        #header .inner .menuWeb #gnb li:hover a {
+          background: #555;
+          color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

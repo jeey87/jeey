@@ -21,5 +21,36 @@
                 color: #444;
             }
         }
+
+        .menuWeb {
+            #gnb {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        padding: 20px 40px;
+                        font: bold 15px/1 "arial";
+                        color: #555;
+                        transition: all 0.5s;
+                    }
+
+                    &:hover a {
+                        background: #555;
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
 }
