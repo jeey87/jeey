@@ -403,7 +403,11 @@
     }
 }
 
+
+//--------------------------------------------
 //------------------tablet--------------------
+//--------------------------------------------
+
 
 @media screen and (max-width: 1179px){
     #header {
@@ -495,7 +499,7 @@
         .inner {width: 100%;}
     }
 
-    //-------------comments-------------------
+    //---------------comments-----------------
 
     #comments {
         padding: 80px 30px;
@@ -504,12 +508,103 @@
         .inner {width: 100%;}
     }
 
-    //-------------footer---------------------
+    //---------------footer-------------------
 
     #footer {
         padding: 80px 30px;
         box-sizing: border-box;
 
         .inner {width: 100%;}
+    }
+}
+
+
+//--------------------------------------------
+//------------------mobile--------------------
+//--------------------------------------------
+
+
+@media screen and (max-width: 539px){
+    //----------------visual------------------
+
+    #visual {
+        height: 400px;
+
+        .inner {
+            h1 {
+                font: normal 12vmin/1 "arial";
+            }
+        }
+    }
+
+    //------------------news------------------
+
+    #news {
+        .inner {
+            .wrap {
+                article {
+                    width: 100%;
+                    margin-right: 0%;
+
+                    .pic {height: 30vmax;}
+                }
+            }
+        }
+    }
+
+    //------------------brand-----------------
+
+    #brand {
+        .inner {
+            .wrap {
+                article:nth-of-type(1) {
+                    width: 100%;
+                    height: 400px;
+                    padding: 50px;
+                    margin-right: 0%;
+                    margin-bottom: 20px;
+                }
+
+                article:nth-of-type(2) {
+                    width: 100%;
+                }
+
+                article:nth-of-type(3) {
+                    width: 100%;
+                }
+
+                article:nth-of-type(4) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    //-----------------banner-----------------
+
+    #banner {padding: 120px 30px;}
+
+    //comments
+
+    #comments {
+        .inner {
+            ul li a {margin-bottom: 10px;}
+        }
+    }
+
+    //----------------footer------------------
+
+    #footer {
+        .inner {
+            h1 {margin-bottom: 20px;}
+            ul {
+                width: 100%;
+
+                li {
+                    margin-left: 0px;
+                    margin: 5px;
+                }
+            }
+        }
     }
 }
