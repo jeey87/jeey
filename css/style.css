@@ -9,6 +9,11 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0px; }
+
 #header_sub {
   width: 100%;
   border-bottom: 1px solid #ddd; }
@@ -203,10 +208,10 @@ a {
       margin-left: 0px;
       margin: 5px; } }
 .community .sub_visual {
-  background: lightcyan; }
+  background: #aaa; }
 .community .inner table {
   width: 100%;
-  border-bottom: 20px solid #111;
+  border-bottom: 2px solid #111;
   margin-bottom: 50px;
   border-collapse: collapse; }
   .community .inner table tr:nth-of-type(even) {
@@ -226,11 +231,17 @@ a {
   .community .inner table tr td {
     padding: 13px;
     border-bottom: 1px solid #ddd;
-    text-align: center; }
+    text-align: center;
+    color: #555; }
     .community .inner table tr td:nth-of-type(2) {
       text-align: left; }
+    .community .inner table tr td:nth-of-type(3) {
+      font-family: "맑은 고딕"; }
     .community .inner table tr td a {
-      float: left; }
+      float: left;
+      font-family: "arial";
+      color: #333;
+      line-height: 1.4; }
 .community .inner .pagination {
   width: 100%;
   text-align: center; }
@@ -239,16 +250,14 @@ a {
     display: block;
     clear: both; }
   .community .inner .pagination .prev {
-    float: left;
-    display: block;
+    display: inline-block;
     width: 30px;
     height: 30px;
     font-size: 20px;
     color: #555;
     text-align: center; }
   .community .inner .pagination .next {
-    float: right;
-    display: block;
+    display: inline-block;
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -271,6 +280,44 @@ a {
         background: #666;
         color: #fff; }
 
+@media screen and (max-width: 1179px) {
+  .community .inner table tr th {
+    padding: 15px; }
+    .community .inner table tr th:nth-of-type(1) {
+      width: 11%; }
+    .community .inner table tr th:nth-of-type(3) {
+      width: 16%; }
+    .community .inner table tr th:nth-of-type(4) {
+      width: 0%;
+      display: none; }
+  .community .inner table tr td:nth-of-type(4) {
+    display: none; }
+  .community .inner .pagination .numbers a:nth-of-type(6) {
+    display: none; }
+  .community .inner .pagination .numbers a:nth-of-type(7) {
+    display: none; }
+  .community .inner .pagination .numbers a:nth-of-type(8) {
+    display: none; }
+  .community .inner .pagination .numbers a:nth-of-type(9) {
+    display: none; }
+  .community .inner .pagination .numbers a:nth-of-type(10) {
+    display: none; } }
+@media screen and (max-width: 539px) {
+  .community .inner h1 {
+    font-size: 45px; }
+  .community .inner table tr th {
+    font-size: 14px; }
+    .community .inner table tr th:nth-of-type(1) {
+      width: 0%;
+      display: none; }
+    .community .inner table tr th:nth-of-type(3) {
+      width: 27%; }
+  .community .inner table tr td {
+    font-size: 13px; }
+    .community .inner table tr td:nth-of-type(1) {
+      display: none; }
+  .community .inner .pagination .numbers {
+    display: none; } }
 /*
 @mixin title() {
     font: bold 24px/1 "arial";
